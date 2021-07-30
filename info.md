@@ -14,4 +14,4 @@
 
 >> # **Our Wire-Frame  :**
 
-![](wireframe/wireframe.jpeg)
+![](wireframe/wire-frame.jpg) 
