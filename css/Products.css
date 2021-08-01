@@ -19,7 +19,7 @@ h4{
 }
 .intro{
     width: 70%;
-    /* text-align: center; */
+  
     padding-left: 8%;
     font-size: 18px;
 }
@@ -37,7 +37,7 @@ body{
 
 .items{
     display: block;
-    /* background-color: magenta; */
+    
     height: 280px;
     width: 100%;
     
@@ -68,7 +68,7 @@ body{
     
     float: left;
     display: inline-block;
-    /* background-color: lawngreen; */
+
 
    
     
@@ -81,11 +81,17 @@ body{
     margin-right: 15%;
     float: right;
     display: inline-block;
-    /* background-color: lightseagreen; */
+   
     list-style-type: none;
 
     
     
+}
+
+.ulTent li{
+
+    font-size: 25px;
+
 }
 
 
