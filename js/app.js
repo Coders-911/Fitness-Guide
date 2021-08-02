@@ -1,3 +1,6 @@
+
+
+
 "use strict";
 // global array for cart
 //
@@ -699,3 +702,4 @@ Yoga.prototype.renderButtonYoga = function () {
 
 
 
+// renderYoga();
