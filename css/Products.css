@@ -1,0 +1,134 @@
+header{
+    height: 300px;
+}
+
+h1{
+    background-image: url(https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    height: 70px;
+    text-align: center;
+    
+    
+    padding-top: 25px;
+    
+    color: cornsilk;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h4{
+    font-size: 20px;
+}
+.intro{
+    width: 70%;
+  
+    padding-left: 8%;
+    font-size: 18px;
+}
+
+
+body{
+    margin-left: 12%;
+    margin-right: 10%;
+    background-image: url(https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+.newSort{
+    height: 3000px;
+}
+
+.items{
+    display: block;
+    
+    height: 280px;
+    width: 100%;
+    
+    margin: 10px;
+    border-radius:10px;
+    background: #dae9b7;
+    margin-top: 50px;
+    border: solid black;
+}
+
+.img  {
+
+    width:35%;
+    height: 60%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 4%;
+
+    border: solid #0b3b01;
+    border-radius: 30px;
+
+
+}
+
+
+
+.img{
+    
+    float: left;
+    display: inline-block;
+
+
+   
+    
+
+}
+
+.ulTent {
+    margin-top: 0;
+    width: 30%;
+    margin-right: 15%;
+    float: right;
+    display: inline-block;
+   
+    list-style-type: none;
+
+    
+    
+}
+
+.ulTent li{
+
+    font-size: 25px;
+
+}
+
+
+.button{
+    width: 150px;
+    height: 30px;
+    font: bold;
+    font-size: 17px;
+    background-color: #28FFBF ;
+}
+
+.price{
+    font-size: 18px;
+    font: bolder;
+    color: #FF3F00;
+    font-weight: bolder;
+    font-weight: bolder;
+
+}
+
+#boots{
+    width: 100%;
+    height: 350px;
+    border:double black;
+}
+
+span{
+    font: bolder;
+    color: navy;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+footer{
+    height: 350px; 
+}
+
+
+
