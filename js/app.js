@@ -453,7 +453,8 @@ function handleButton(event) {
     if (elementId === `ul${event.target.id}`) {
       cart.push(Hiking.allItems[i]);
       saveCart();
-      swal();
+      
+     
       // alert("Thank you ")
       
       
@@ -589,6 +590,7 @@ function handleButtonKendo(event) {
       cart.push(Kendo.allItems[i]);
       saveCart();
       console.log(cart);
+      
        
     }
   }
@@ -601,7 +603,4 @@ function handleButtonKendo(event) {
 
 
 
-function swal(){
-  ("Deleted!", "Your imaginary file has been deleted.", "success");
-};
 
