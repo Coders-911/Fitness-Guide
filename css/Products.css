@@ -301,6 +301,7 @@ button{
     font-weight: bolder;
     background-color: #F7FD04ed;
     font-size: 20px;
+    cursor: pointer;
 }
 
 button:hover{
