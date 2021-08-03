@@ -27,9 +27,8 @@
     transition: 0.6s;
     padding: 50px 100px;
     z-index: 10000;
-    background-image: url(https://images.pexels.com/photos/3742709/pexels-photo-3742709.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     opacity: .7;
-    
     
 
   }
@@ -54,7 +53,7 @@
     cursor: pointer;
   }
   #rami {
-    color: #484848;
+    color: #aaa2a2;
     font-size: 100px;
     font-weight: bold;
     font-family: monospace;
@@ -286,7 +285,7 @@ iframe{
     background-size: 100%;
     /* background: #dae9b7; */
     margin-top: 50px;
-    border: solid rgb(231, 247, 17);
+    border: solid rgb(243, 1, 1);
 
     position: relative;
 }
@@ -318,7 +317,7 @@ button:hover{
     margin-top: 4%;
     margin-left: 50px;
 
-    border: solid #c1eb0a;
+    border: solid rgb(255, 0, 0);
     border-radius: 30px;
 
 
