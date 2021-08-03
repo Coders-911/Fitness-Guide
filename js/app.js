@@ -453,6 +453,12 @@ function handleButton(event) {
     if (elementId === `ul${event.target.id}`) {
       cart.push(Hiking.allItems[i]);
       saveCart();
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
       
      
       // alert("Thank you ")
@@ -508,6 +514,12 @@ function handleButtonYoga(event) {
       cart.push(Yoga.allItems[i]);
       saveCart();
       console.log(cart);
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
        
     }
   }
@@ -548,6 +560,12 @@ function handleButtonGym(event) {
       cart.push(Gym.allItems[i]);
       saveCart();
       console.log(cart);
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
        
     }
   }
@@ -590,11 +608,24 @@ function handleButtonKendo(event) {
       cart.push(Kendo.allItems[i]);
       saveCart();
       console.log(cart);
+
+
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
       
        
     }
   }
 }
+
+
+
+
+
 
 
 
