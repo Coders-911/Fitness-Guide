@@ -1,5 +1,5 @@
 'use strict';
-let sport = [];
+let feedback = [];
 function FeedBack(name, age, gender, review, rate) {
     this.name = name;
     this.age = age;
@@ -40,3 +40,6 @@ function submitter(e) {
     // console.log(e.target.rate.value);
     addFeedBack.render();
 }
+
+
+
