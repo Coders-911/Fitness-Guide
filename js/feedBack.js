@@ -1,6 +1,7 @@
 
 "use strict";
-import swal from 'sweetalert';
+
+
 let feedback = [];
 function FeedBack(name, age, gender, review, rate) {
   this.name = name;
@@ -29,7 +30,7 @@ FeedBack.prototype.render = function () {
 let form = document.getElementById("feedBack");
 form.addEventListener("submit", submitter);
 function submitter(e) {
-
+e.preventDefault();
   let name = e.target.name.value;
   let age = e.target.age.value;
   let gender = e.target.gender.value;
@@ -40,18 +41,22 @@ function submitter(e) {
   console.log(addFeedBack);
 
   addFeedBack.render();
+  form.reset();
+  // swal('hello');
  
-swal('hello')   
-    //Swal.fire({
-//     position: 'top-end',
-//     icon: 'success',
-//     title: 'Your work has been saved',
-//     showConfirmButton: false,
-//     timer: 1500
-//   });
+  // alert('hello')
+  // console.log(test);
+    Swal.fire({
+    position: 'top-end',
+    icon: 'success',
+    title: 'Your work has been saved',
+    showConfirmButton: false,
+    timer: 1500
+  });
   
 
 }
+
 
 
 function updatefeedback() {

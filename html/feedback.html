@@ -40,12 +40,12 @@
              <input type="text" name="name" size="20" maxlength="40" required>
              <br />
              <br />
-             <label>Age: </label>
+             <label id="age">Age: </label>
              <br />
              <input type="text" name="age" />
              <br />
              <br />
-             <label>Gender:</label>
+              <p id="gender">Gender:</p> 
              
              <br />
              <br />
@@ -70,8 +70,10 @@
              </p>
              <br />
              <br />
+            <p id="rating">
+                Please rate our website 
+            </p>
             
-             Please rate our website 
       <br />
       
      <style>
@@ -108,7 +110,8 @@
    </body>
    
    <div id="fitness"></div>
-   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
    <script src="/js/feedBack.js"></script>
 
 </html>

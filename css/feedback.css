@@ -1,3 +1,7 @@
+*{
+    font-family: Graphik, sans-serif;
+}
+
 #feedBack,h3,h4,p{
     color: aliceblue;
 }
@@ -9,13 +13,18 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: 20px;
 }
-#name,legend,label{
-    
-        padding: 12px ;
-    
-    
-}
 
+fieldset{
+    /* background-image:url("https://thumbs.dreamstime.com/z/fitness-gym-hand-drawn-seamless-pattern-light-sports-vector-background-kettlebell-dumbbell-stopwatch-boxing-52828422.jpg") ; */
+
+    font-weight: bold;
+}
+#name,#gender,legend,#rating,#age{
+    margin-left: 2%;
+}
+#male,#female{
+    margin-left: 1%;
+}
 
 input[type=text] {
     background-color:#B2B1B9;
@@ -33,9 +42,9 @@ input[type=text] {
     border: 3px solid #555;
     border-radius: 4px;
     background-color: #B2B1B9;
-    resize: none;
-    border-radius: 4px;
     resize: vertical;
+    border-radius: 4px;
+    font-size: 22px;
     
   }
   input[type=submit]{
