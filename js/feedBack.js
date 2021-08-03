@@ -1,5 +1,6 @@
 
 "use strict";
+import swal from 'sweetalert';
 let feedback = [];
 function FeedBack(name, age, gender, review, rate) {
   this.name = name;
@@ -28,7 +29,7 @@ FeedBack.prototype.render = function () {
 let form = document.getElementById("feedBack");
 form.addEventListener("submit", submitter);
 function submitter(e) {
-  //   e.preventDefault();
+
   let name = e.target.name.value;
   let age = e.target.age.value;
   let gender = e.target.gender.value;
@@ -39,7 +40,8 @@ function submitter(e) {
   console.log(addFeedBack);
 
   addFeedBack.render();
-//   alert()
+ 
+swal('hello')   
     //Swal.fire({
 //     position: 'top-end',
 //     icon: 'success',
