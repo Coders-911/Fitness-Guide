@@ -20,6 +20,12 @@ main {
     margin-top: 13%;
 }
 
+ul li {
+  text-align: justify;
+  /* color: #fa0606; */
+  padding: 10px;
+}
+
 ul {
     margin-left: 2%;
     list-style-position: outside;
