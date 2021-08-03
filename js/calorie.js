@@ -17,6 +17,7 @@ function calclateCalores(event) {
     let isMlae = event.target.male.checked;
     let isFemale = event.target.female.checked;
     let totalCalories = document.getElementById('total-calories');
+    let ps=document.getElementById('link-Sport');
     let result = 0;
     let goodSport;
     let pageLink ="";
@@ -82,5 +83,6 @@ function CreateLink(pageLink) {
     a.appendChild(linkText);
     a.title = "page";
     a.href = pageLink;
-    document.body.appendChild(a);
+    document.getElementById('link-Sport').appendChild(a);
+    
 }
