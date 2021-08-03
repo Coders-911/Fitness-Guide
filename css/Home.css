@@ -120,6 +120,7 @@ header ul a {
   height: 100vh;
   background: url(../img/Home/bc79a4fe9aa1f6e56f5d00a01ad0dae2.jpg);
   background-size: cover;
+  background-position: center;
 }
 header.sticky .logo,
 header.sticky ul li a {
@@ -175,8 +176,8 @@ h3 {
   header ul {
     width: 100%;
     background: black;
-    position:absolute;
-    top:75px;
+    position: absolute;
+    top: 75px;
     right: 0;
     z-index: 2;
     display: block;
@@ -298,3 +299,87 @@ h3 {
     from { transform: rotate(0deg); }
       to { transform: rotate(0deg); }
   } */
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: #fff;
+  background-color: rgb(5, 5, 5);
+}
+
+.footer > * {
+  flex: 1 100%;
+}
+
+.l-footer {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.r-footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.r-footer > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.box a {
+  color: #999;
+}
+
+.h-box {
+  column-count: 1;
+  column-gap: 1.25em;
+}
+
+.b-footer {
+  text-align: center;
+  color: #999;
+  padding-top: 50px;
+  
+}
+
+.l-footer p {
+  padding-right: 20%;
+  color: #999;
+}
+
+@media screen and (min-width: 600px) {
+  .r-footer > * {
+    flex: 1;
+  }
+
+  .features {
+    flex-grow: 2;
+  }
+
+  .l-footer {
+    flex: 1 0px;
+  }
+
+  .r-footer {
+    flex: 2 0px;
+  }
+}

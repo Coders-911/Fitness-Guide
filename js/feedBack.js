@@ -1,3 +1,4 @@
+
 "use strict";
 let feedback = [];
 function FeedBack(name, age, gender, review, rate) {
@@ -87,3 +88,4 @@ function renderAllReviews() {
 
 getfeedback();
 renderAllReviews();
+
