@@ -54,8 +54,6 @@ html, body {
   left: 0;
   width: 101%;
   height: 101%;
-  background: #22222A;
-  opacity: 0;
   z-index: 1;
 }
 
@@ -88,8 +86,8 @@ html, body {
 
 .item-header {
   position: absolute;
-  top: 150px;
-  left: -1.8%;
+  top: 80px;
+  left: 47%;
   z-index: 100;
 }
 
