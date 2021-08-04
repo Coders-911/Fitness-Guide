@@ -4,124 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <h1>Feed Back</h1>
-    </header>
-   
-   <form id="feedBack">
-       <fieldset>
-        <p> User Name :
-            <input type="text" name="name" size="20" maxlength="40" required>
-        </p>
-        <label>Age: <input type="text" name="age" /></label>
-        <br/>
-        <br/>
-        Gender:
-        <br/>
-        <input id="female" type="radio" name="gender"
-        value="f">
-        <label for="female">Female</label>
-        <input id="male" type="radio" name="gender"
-        value="m">
-        <label for="male">Male</label>
-        <p>
-            <legend>
-                Enter your feedback:
-                </legend>
-                <textarea rows="4" cols="40" name="review" id="comments">
-                </textarea>
-        </p>
-        Please rate our website 
- <br />
- <!-- <label>
- <input type="checkbox" name="rating" value="1" />
-  <img src="/img/yoga/sVUiX.jpg" alt=""> -->
- <!-- <input type="checkbox" name="rating" value="1" />
- <input type="checkbox" name="rating" value="1" />
- <input type="checkbox" name="rating" value="1" />
- <input type="checkbox" name="rating" value="1" />
-         </label>
-        </p>  --> 
-        <!-- from w3 schools
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.checked {
-  color: orange;
-}
-</style>
-</head>
+    <link rel="stylesheet" href="/css/Home.css">
+    <link rel="stylesheet" href="/css/feedback.css">
+    <title>feedback</title>
+       
+  
+<header>
+    <h1><span>Fitness</span>G<span>uide</span></h1>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#Sports">Sports</a></li>
+        <li><a href="#Prodcuts">Prodcuts</a></li>
+        <li><a href="#Cart">Cart</a></li>
+        <li><a href="#AboutUs">AboutUs</a></li>
+    </ul>
+    <div class="menu">
+        <img src="https://us.123rf.com/450wm/lililia/lililia1711/lililia171100498/90663989-icona-piana-di-vettore-del-menu-su-sfondo-nero-.jpg?ver=6">
+    </div>
+    
+</header>
+
+      
 <body>
-
-<h5>Star Rating</h5>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span> -->
-<style>
+    <main>
+     
+  
+ 
+    <div class="formContaner">
+        <form id="feedBack">
+            <fieldset id="fieldset">
+             <p id="name"> User Name :
+               
+             </p>
+             
+             <input type="text" name="name" size="20" maxlength="40" required>
+             <br />
+             <br />
+             <label id="age">Age: </label>
+             <br />
+             <input type="text" name="age" />
+             <br />
+             <br />
+              <p id="gender">Gender:</p> 
+             
+             <br />
+             <br />
+             
+             
+             <input id="female" type="radio" name="gender"
+             value="f">
+             <label for="female">Female</label>
+             <input id="male" type="radio" name="gender"
+             value="m">
+             <label for="male">Male</label>
+             <p>
+                <br />
+                <br />
+                 <legend>
+                     Enter your feedback:
+                     </legend>
+                     <br />
+             
+                     <textarea rows="4" cols="40" name="review" id="comments">
+                     </textarea>
+             </p>
+             <br />
+             <br />
+            <p id="rating">
+                Please rate our website 
+            </p>
+            
+      <br />
+      
+     <style>
+        
    
-/* from codepen.io */
-.rate {
-    float: left;
-    height: 46px;
-    padding: 0 10px;
-}
-.rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-}
-.rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:30px;
-    color:#ccc;
-}
-.rate:not(:checked) > label:before {
-    content: '★ ';
-}
-.rate > input:checked ~ label {
-    color: #ffc700;    
-}
-.rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
-}
-.rate > input:checked + label:hover,
-.rate > input:checked + label:hover ~ label,
-.rate > input:checked ~ label:hover,
-.rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
-}
-</style>
-<div class="rate">
-    <input type="radio" id="star5" name="rate" value="5" />
-    <label for="star5" title="text">5 stars</label>
-    <input type="radio" id="star4" name="rate" value="4" />
-    <label for="star4" title="text">4 stars</label>
-    <input type="radio" id="star3" name="rate" value="3" />
-    <label for="star3" title="text">3 stars</label>
-    <input type="radio" id="star2" name="rate" value="2" />
-    <label for="star2" title="text">2 stars</label>
-    <input type="radio" id="star1" name="rate" value="1" />
-    <label for="star1" title="text">1 star</label>
-  </div>
-        <br />
-        <br />
- <input type="submit" value="Submit review" />
-         </fieldset> 
 
-       </fieldset>
-       
-       
-      
-       
-      
-   </form>
+     </style>
+     <div class="rate">
+         <input type="radio" id="star5" name="rate" value="5" />
+         <label for="star5" title="text">5 stars</label>
+         <input type="radio" id="star4" name="rate" value="4" />
+         <label for="star4" title="text">4 stars</label>
+         <input type="radio" id="star3" name="rate" value="3" />
+         <label for="star3" title="text">3 stars</label>
+         <input type="radio" id="star2" name="rate" value="2" />
+         <label for="star2" title="text">2 stars</label>
+         <input type="radio" id="star1" name="rate" value="1" />
+         <label for="star1" title="text">1 star</label>
+       </div>
+             <br />
+             <br />
+             <br />
+      <input type="submit" value="Submit review" />
+              </fieldset> 
+     
+            </fieldset>
+            
+            
+           
+            
+           
+        </form>
+    </section>
+    <section class="Container">
+        <h3>All you need to know about sports</h3>
+        <div class="writing">
+            <h1>YOU CAN<span class="brackets inline"><span>DO</span>IT &#10003;</span> </h1>
+
+    </section>
+</main>
+
+<footer>
+    <footer class="footer">
+        <div class="l-footer">
+        <h1>
+        <!-- <img src="https://i.postimg.cc/y62wcLBq/logo.png" alt=""></h1> -->
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam atque recusandae in sit sunt molestiae aliquid fugit. Mollitia eaque tempore iure sit nobis? Vitae nemo, optio maiores numquam quis recusandae.</p>
+        </div>
+        <ul class="r-footer">
+        <li>
+          <h2>
+        Social</h2>
+        <ul class="box">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Dribbble</a></li>
+        </ul>
+        </li>
+        <li class="features">
+          <h2>
+        Information</h2>
+        <ul class="box h-box">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Sales</a></li>
+        </ul>
+        <div class="b-footer">
+        <p>
+        All rights reserved by ©911Coders 2021 </p>
+        </div>
+
+</footer>
+   </body>
+   
    <div id="fitness"></div>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
    <script src="/js/feedBack.js"></script>
-</body>
+
 </html>
