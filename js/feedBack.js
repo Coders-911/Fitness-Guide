@@ -12,21 +12,42 @@ function FeedBack(name, age, gender, review, rate) {
   feedback.push(this);
   console.log("feedback", feedback);
 }
+let article = document.createElement("div");
 
 let parentElement = document.getElementById("fitness");
-FeedBack.prototype.render = function () {
-  let article = document.createElement("div");
-  parentElement.appendChild(article);
+FeedBack.prototype.render = function (i) {
+
+  let reviewBox=document.createElement("div");
+  reviewBox.className=`allReview2`;
+  
+
+  article.appendChild(reviewBox);
+
   let h4 = document.createElement("h4");
+  h4.className=`h4-review`
   h4.textContent = `Name :${this.name}`;
-  article.appendChild(h4);
+  reviewBox.appendChild(h4);
   let p = document.createElement("p");
+  p.className=`p-review`
   p.textContent = ` Review : ${this.review}`;
-  article.appendChild(p);
+  reviewBox.appendChild(p);
   let h3 = document.createElement("h3");
+  h3.className=`h3-review`
   h3.textContent = `Rate :${this.rate} stars`;
-  article.appendChild(h3);
+  reviewBox.appendChild(h3);
+
+parentElement.appendChild(article);
+article.className="allReview";
 };
+
+
+  
+
+
+
+ 
+ 
+  
 let form = document.getElementById("feedBack");
 form.addEventListener("submit", submitter);
 function submitter(e) {
@@ -47,7 +68,7 @@ e.preventDefault();
   // alert('hello')
   // console.log(test);
     Swal.fire({
-    position: 'top-end',
+    position: 'center',
     icon: 'success',
     title: 'Your work has been saved',
     showConfirmButton: false,
@@ -89,7 +110,7 @@ function renderAllReviews() {
 
   for (let i = 0; i < feedback.length; i++) {
     console.log("feeedback", feedback);
-    feedback[i].render();
+    feedback[i].render(i);
   }
 }
 
