@@ -185,6 +185,12 @@ img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
 }
+.btn a{
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
 .btn {
   font-family: "Lato", sans-serif;
   border-radius: 8px;
