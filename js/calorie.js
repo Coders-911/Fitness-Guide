@@ -55,7 +55,7 @@ if(result >1600 &&result<2000 && activity ==="1" ||activity ==="2"){
 
 pageLink="/html/Resistance-exercises.html",
 goodSport="Resistance-exercises"
-}else if(result >1600 &&result<2000 && activity ==="1" ||activity ==="2"){
+}else if(result >1600 ||result<2000 && activity ==="1" ||activity ==="2"){
     
     pageLink="/html/yoga.html",
     goodSport=" Yoga "
@@ -83,6 +83,8 @@ function CreateLink(pageLink) {
     a.appendChild(linkText);
     a.title = "page";
     a.href = pageLink;
+    a.style.textDecoration = "none";
+    a.style.color="white"
     document.getElementById('link-Sport').appendChild(a);
     
 }
