@@ -46,6 +46,7 @@ function renderProduct(product, index) {
 
     //info
     priceContainer.appendChild(document.createTextNode(`$${product.price}`));
+    priceContainer.classList.add('price')
     priceContainer.appendChild(count);
     removeProductButton.appendChild(document.createTextNode('Remove from Cart'));
     removeProductButton.addEventListener('click', function () { removeFromCart(index) })
