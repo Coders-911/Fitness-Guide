@@ -51,6 +51,7 @@ function renderProduct(product, index) {
     removeProductButton.addEventListener('click', function () { removeFromCart(index) })
     infoContainer.appendChild(priceContainer);
     infoContainer.appendChild(removeProductButton);
+    removeProductButton.classList.add('btn');
 
 
 
@@ -74,3 +75,8 @@ function removeFromCart(index) {
 // start cart
 main();
 
+// cart page nav
+window.addEventListener('scroll' , function(){
+    let header = this.document.querySelector('header');
+    header.classList.toggle("sticky", window.scrollY >0);
+    })
