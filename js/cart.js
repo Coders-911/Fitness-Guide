@@ -1,5 +1,6 @@
 'use strict';
 
+
 // elements
 const container = document.getElementById('cart-prodcut-container');
 const totalPriceElement = document.getElementById('total-price');
@@ -49,7 +50,9 @@ function renderProduct(product, index) {
     priceContainer.classList.add('price')
     priceContainer.appendChild(count);
     removeProductButton.appendChild(document.createTextNode('Remove from Cart'));
-    removeProductButton.addEventListener('click', function () { removeFromCart(index) })
+    removeProductButton.addEventListener('click', function () { removeFromCart(index)
+        JSalert();
+     })
     infoContainer.appendChild(priceContainer);
     infoContainer.appendChild(removeProductButton);
     removeProductButton.classList.add('btn');
@@ -71,6 +74,27 @@ function removeFromCart(index) {
     saveCart();
     main();
 }
+function JSalert(){
+ 
+    swal({   title: "Your account will be deleted permanently!",   
+    text: "Are you sure to proceed?",   
+    type: "warning",   
+    showCancelButton: true,   
+    confirmButtonColor: "#DD6B55",   
+    confirmButtonText: "Remove My Account!",   
+    cancelButtonText: "I am not sure!",   
+    closeOnConfirm: false,   
+    closeOnCancel: false }, 
+    function(isConfirm){   
+        if (isConfirm) 
+    {   
+        swal("Account Removed!", "Your account is removed permanently!", "success");   
+        } 
+        else {     
+            swal("Hurray", "Account is not removed!", "error");   
+            } });
+}
+     
 
 
 // start cart
