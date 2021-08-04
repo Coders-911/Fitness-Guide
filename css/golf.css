@@ -1,0 +1,35 @@
+body {
+    height: 100%;
+
+}
+
+
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+   
+   
+}
+main{
+  margin-top: 20pc;
+  margin-left: 10pc;
+}
+.im{
+    width: 700px;
+    height: 300px;
+    border-radius: 50%;
+}
+p{
+    text-align: justify;
+        -moz-text-align-last: center;
+        text-align-last: center;
+        width: 700px;
+    
+}
+.prgrf{
+    width: 700px;
+}
