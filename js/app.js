@@ -25,6 +25,7 @@ function Hiking(name, src, id, price) {
   this.src = src;
   this.id = id;
   this.price = price;
+  
   // catogry
 
   Hiking.allItems.push(this);
@@ -55,7 +56,7 @@ new Hiking(
 );
 new Hiking(
   "boot2",
-  "https://m.media-amazon.com/images/I/61HVHhtrpTL._AC_UY500_.jpg",
+  "https://www.rei.com/media/dcbd50d0-207d-4df9-99eb-61355c02089e?size=784x588",
   ulboot2,
   80.55
 );
@@ -86,7 +87,7 @@ function renderHiking() {
     "Packaged weight: 3 lbs. 14 oz.",
     "Design type:Freestanding",
     "Floor area:31.3 sq. ft.",
-    "Number of doors:2",
+    
     `Price: $ ${Hiking.allItems[1].price}`,
   ];
   let lies3 = [
@@ -119,17 +120,17 @@ function renderHiking() {
 
   let liBoot1 = [
     "Backpacking boots  : These are designed to carry heavier loads on multiday trips deep into the backcountry.",
-    "Design type  :  Most have a high cut that wraps above the ankles for excellent support.",
+    "Design type  :  Most have a high cut that wraps above the ankles.",
     `Price: $ ${Hiking.allItems[3].price}`,
   ];
 
   let liBoot2 = [
-    "Waterproof membranes: Boots and shoes billed as “waterproof” feature uppers constructed with waterproof/breathable membranes (such as Gore-Tex® or eVent®) to keep feet dry in wet conditions.",
+    "Waterproof membranes: Boots and shoes billed as “waterproof” feature uppers constructed with waterproof/breathable membranes (such as Gore-Tex® or eVent®) .",
     `Price: $ ${Hiking.allItems[4].price}`,
   ];
 
   let liBoot3 = [
-    "Hiking shoes: Low-cut models with flexible midsoles are excellent for day hiking. Some ultralight backpackers may even choose trail-running shoes for long-distance journeys.",
+    "Hiking shoes: Low-cut models with flexible midsoles are excellent for day hiking. .",
     "Design type :Semifreestanding",
     `Price: $ ${Hiking.allItems[5].price}`,
   ];
@@ -216,14 +217,14 @@ function renderYoga() {
   ];
 
   let lies2 = [
-    "Yunmai yoga cube blue Non-slip surface to ensure stability, with beveled edges for easy gripping. Whether under your hands, feet, or even your seat.",
+    "Yunmai yoga cube blue Non-slip surface to ensure stability, with beveled edges for easy gripping. .",
     "Ensure proper alignment during poses",
     `Price:$ ${Yoga.allItems[1].price}`,
   ];
 
   let lies3 = [
     "Self-guided 65 cm stability ball Do moves like sit-up twists, kick-back lunges and back extensions to enhance your core.",
-    "Easy-to-follow visuals for best resultsDiscover how much fun workouts can be with our Self-Guided Stability Ball.",
+    "Easy-to-follow visuals for best resultsDiscover .",
     `Price:$ ${Yoga.allItems[2].price}`,
   ];
 
@@ -292,14 +293,14 @@ function renderGym() {
   GymImg3.src = Gym.allItems[2].src;
 
   let lies1 = [
-    'About this item :Treadmill dimensions – 50" L x 24" W x 49.2" H | Folded dimensions – 25.2” L x 24” W x',
-    "Design type:The compact treadmill for small spaces has LCD display w/ touch button controls",
+    'About this item :Treadmill dimensions L x 24" W x 49.2" H / Folded dimensions – 25.2”L',
+    "Design type:The compact treadmill for small spaces has LCD display",
     `Price:$ ${Gym.allItems[0].price}`,
   ];
 
   let lies2 = [
     "Realistic gym weights set - weight lifting equipment isolated on white background.",
-    "Heavy black barbells, light dumbbell and cast iron kettlebell, vector illustration.",
+    "Heavy black barbells, light dumbbell and cast iron kettlebell",
     `Price:$ ${Gym.allItems[1].price}`,
   ];
 
@@ -375,19 +376,19 @@ function renderKendo() {
 
   let lies1 = [
     "About this item  :Cutting-edge youth safety helmet for biking, skating, and more",
-    "Fits head sizes 22 to 23.5 inches :   Ergonomic interior padding is comfortable and secure",
+    "Fits head sizes 22 to 23.5 inches :   Ergonomic interior padding is comfortable ",
     `Price:$ ${Kendo.allItems[0].price}`,
   ];
 
   let lies2 = [
-    "About this item  : Snake Eye Tactical Ninja Sword and Kunai/Throwing Knife Set with Sheath",
-    "DURABLE BLACK COATED DESIGN BLADE  can be used both for recreational use and sharp enough to use in the kitchen",
+    "About this item  : Snake Eye Tactical Ninja Sword and Kunai/Throwing Knife Set",
+    "DURABLE BLACK COATED DESIGN BLADE  can be used for recreational",
     `Price:$ ${Kendo.allItems[1].price}`,
   ];
 
   let lies3 = [
-    "Japanese set: Traditional Japanese Samurai Kimono Set Kendo Gi + Hakama Pants + Haori Jacket",
-    " Delivery: Estimated between Thu. Aug. 19 and Thu. Sep. 2",
+    "Japanese set: Traditional Japanese Samurai Kimono Set Kendo + Hakama Pants + Jacket",
+    " Delivery: Estimated between Aug. 19 and Sep. 2",
     `Price:$ ${Kendo.allItems[2].price}`,
   ];
 
@@ -452,6 +453,17 @@ function handleButton(event) {
     if (elementId === `ul${event.target.id}`) {
       cart.push(Hiking.allItems[i]);
       saveCart();
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
+      
+     
+      // alert("Thank you ")
+      
+      
       console.log(cart);
     }
   }
@@ -502,6 +514,12 @@ function handleButtonYoga(event) {
       cart.push(Yoga.allItems[i]);
       saveCart();
       console.log(cart);
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
        
     }
   }
@@ -542,6 +560,12 @@ function handleButtonGym(event) {
       cart.push(Gym.allItems[i]);
       saveCart();
       console.log(cart);
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
        
     }
   }
@@ -555,6 +579,7 @@ Kendo.prototype.renderButtonKendo = function () {
   console.log(button);
 
   button.id = `${this.name}`;
+  
 
   button.textContent = "Add to Cart";
 
@@ -583,14 +608,30 @@ function handleButtonKendo(event) {
       cart.push(Kendo.allItems[i]);
       saveCart();
       console.log(cart);
+
+
+      Swal.fire({
+        title: "Added to Cart", 
+        html: "..",  
+       
+        icon: "success",
+      });
+      
        
     }
   }
 }
 
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-}
+
+
+
+
+
+
 
 
 // renderYoga();
+
+
+
+
