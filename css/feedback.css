@@ -12,10 +12,24 @@
     margin-top: 10em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: 20px;
+background-image: url("img_nature.jpg");
+
+min-height: 380px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
 }
 
-fieldset{
+body{
     /* background-image:url("https://thumbs.dreamstime.com/z/fitness-gym-hand-drawn-seamless-pattern-light-sports-vector-background-kettlebell-dumbbell-stopwatch-boxing-52828422.jpg") ; */
+    background-image: url("https://img.freepik.com/free-photo/black-wall-texture-background-banner-blank-dark-gradient-studio-room-chalkboard_28629-594.jpg?size=626&ext=jpg");
+
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 
     font-weight: bold;
 }
@@ -63,10 +77,30 @@ float: right;
   }
   
 
+.formContaner{
+    background-image: url("img_nature.jpg");
+
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.feedback {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
 
 
-
-
+.writing{
+    display: flex; 
+    justify-content: center;
+    margin-top: 5em;
+}
 
 
 
