@@ -191,7 +191,11 @@ img {
   text-decoration: none;
   color: black;
 }
+.Calories{
+  margin-top: 20px;
+}
 .btn {
+  
   font-family: "Lato", sans-serif;
   border-radius: 8px;
   letter-spacing: 0.7px;
