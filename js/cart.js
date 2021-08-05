@@ -4,8 +4,35 @@
 // elements
 const container = document.getElementById('cart-prodcut-container');
 const totalPriceElement = document.getElementById('total-price');
-const form = document.getElementById('Form');
+const createProductForm = document.getElementById('create-product');
 
+const priceInput = document.getElementById('price-input');
+const imageUrlInput = document.getElementById('image-url-input');
+
+const checkoutButton = document.getElementById('checkout-button');
+
+
+// events
+createProductForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    cart.push({
+        price: parseFloat(priceInput.value),
+        src: imageUrlInput.value,
+    });
+    saveCart();
+    main();
+
+    imageUrlInput.value = '';
+    priceInput.value = '';
+});
+checkoutButton.addEventListener('click', function () {
+    const sure = confirm('are you sure you want to check out?');
+    if (sure) {
+        cart = [];
+        saveCart();
+        main();
+    }    
+})
 
 // global
 let cart = loadCart();
