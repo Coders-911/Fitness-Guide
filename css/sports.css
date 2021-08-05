@@ -43,7 +43,7 @@ p{
 }
 
 .y-link,.h-link,.t-link,.g-link,.k-link,.r-link{
-
+width: 100%;
   display:list-item; 
   justify-content: center;
   margin: 1em;
@@ -62,6 +62,7 @@ p{
   margin-left: 14em;
  
 }
+/* from w3 schools */
 
 .content1,.content2,.content3,.content4,.content5,.content6{
   float:left;
