@@ -25,15 +25,15 @@ FeedBack.prototype.render = function (i) {
 
   let h4 = document.createElement("h4");
   h4.className=`h4-review`
-  h4.textContent = `Name :${this.name}`;
+  h4.textContent = `${this.name}`;
   reviewBox.appendChild(h4);
   let p = document.createElement("p");
   p.className=`p-review`
-  p.textContent = ` Review : ${this.review}`;
+  p.textContent = ` " ${this.review}"`;
   reviewBox.appendChild(p);
   let h3 = document.createElement("h3");
   h3.className=`h3-review`
-  h3.textContent = `Rate :${this.rate} stars`;
+  h3.textContent = `${this.rate}  `;
   reviewBox.appendChild(h3);
 
 parentElement.appendChild(article);
