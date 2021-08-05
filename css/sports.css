@@ -43,33 +43,20 @@ p{
 
   display:list-item; 
   justify-content: center;
-  margin: 4em;
+  margin: 1em;
+ 
 }
 
 .container{
   margin-top: 10em;
 }
-/* 
-.y-link .content{
-  display: block;
- 
-   position: absolute;
-  bottom: 0;
-  
-  background: rgb(0, 0, 0); Fallback color
-  background: rgba(0, 0, 0, 0.5); Black background with 0.5 opacity
-  color: #f1f1f1;
-  width: 100%;
-  height: 25%;
-  padding: 20px;
-  
-  
-} */
+
 
 .y-link,.h-link,.g-link,.t-link,.k-link,.r-link{
   float:left;
   position: relative;
   z-index: 10;
+  margin-left: 14em;
  
 }
 
