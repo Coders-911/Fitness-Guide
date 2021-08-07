@@ -154,16 +154,13 @@ color: black;
 
 
 .allReview2 {
-    background-color:rgb(201, 186, 177);
-  
+   background-color:rgb(201, 186, 177);
    width: 45%;
    text-align: center;
    margin-left: 25em;
-  
    border-radius:50%;
    height: 10em;
  
-
 }
 
 .Container{
