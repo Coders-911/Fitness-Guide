@@ -65,12 +65,9 @@ body{
 
 fieldset{
     width: 50%;
-
     text-align: center;
     margin-left: 17em;
-    background-image: url(https://lh3.googleusercontent.com/proxy/TGSrX2wlpSwEkmCdG7ZsqSkdyi5-RY6IyWLDC4ccoMuM_6AaH1WsWC24T-R9wBixCT_7JeSzL2ZVTAqBoLbsGs1dBR4_7EIWqMQJFkRb_SZV);
-    opacity: .;
-    
+    background-color: gray;
     min-height: 380px;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,16 +78,16 @@ fieldset{
 
 #name{
     margin-top: 7em;
-    color: #000;
+    color: whitesmoke;
     margin-right: 1em;
 }
 #name,#gender,legend,#rating,#age{
     margin-left: 2%;
-    color: #000;
+    color: whitesmoke;
 }
 #male,#female{
     margin-left: 1%;
-    color: black;
+    color: whitesmoke;
 }
 
 input[type=text] {
