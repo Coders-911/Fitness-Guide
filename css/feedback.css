@@ -1,0 +1,233 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Graphik, sans-serif;
+  }
+  body {
+    background-color: black;
+    min-height: 200vh;
+    margin-right: 10%;
+    margin-left: 10%;
+   
+  }
+#feedBack,h3,h4,p{
+    color: aliceblue;
+}
+/* #feedback{
+    margin-top: 10em;
+} */
+.formContaner{
+    margin-top: 10em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+background-image: url("img_nature.jpg");
+
+min-height: 380px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+
+header {
+    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 50px 100px;
+    z-index: 10000;
+    background-color: gray;
+  opacity: 0.7; 
+  }
+
+body{
+    /* background-image:url("https://thumbs.dreamstime.com/z/fitness-gym-hand-drawn-seamless-pattern-light-sports-vector-background-kettlebell-dumbbell-stopwatch-boxing-52828422.jpg") ; */
+    /* background-image: url("https://img.freepik.com/free-photo/black-wall-texture-background-banner-blank-dark-gradient-studio-room-chalkboard_28629-594.jpg?size=626&ext=jpg"); */
+
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    font-weight: bold;
+}
+
+fieldset{
+    width: 50%;
+    text-align: center;
+    margin-left: 17em;
+    background-color: gray;
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+#name{
+    margin-top: 7em;
+    color: whitesmoke;
+    margin-right: 1em;
+}
+#name,#gender,legend,#rating,#age{
+    margin-left: 2%;
+    color: whitesmoke;
+}
+#male,#female{
+    margin-left: 1%;
+    color: whitesmoke;
+}
+
+input[type=text] {
+    background-color:lightgrey;
+    color:black;
+    border: 3px solid #555;
+    font-size: large;
+    border-radius: 4px;
+    resize: vertical;
+    margin:5px;
+  }
+  textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    border-radius: 4px;
+    background-color: lightgrey;
+    resize: vertical;
+    border-radius: 4px;
+    font-size: 22px;
+    
+  }
+  input[type=submit]{
+   
+
+
+display: inline-block;
+border-radius: 4px;
+background-color: #f4511e;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+margin-bottom: 2.5em;
+
+  }
+  
+
+.formContaner{
+    
+color: black;
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.feedback {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+  }
+
+
+
+.allReview2 {
+   background-color:rgb(201, 186, 177);
+   width: 45%;
+   text-align: center;
+   margin-left: 25em;
+   border-radius:50%;
+   height: 10em;
+ 
+}
+
+.Container{
+    margin: 6em;
+}
+
+.allReview2 .h4-review,.allReview2 .h3-review,.allReview2 .p-review{
+    font-family: cursive;
+    margin-top:20px ;
+    color: #fdf6f4fb;
+}
+
+.allReview2 .p-review{
+    font-size: 1.4em;
+}
+
+.allReview2 .h4-review{
+    margin-top:30px ;
+    font-size: 18px;
+    padding-top: 7px;
+    
+}
+.allReview2 .h3-review{
+   color:#ffc700 ; 
+   font-size: 2em;
+   text-shadow: 0 0 20px #ffc700,
+   0 0 40px#ffc700;
+}
+
+
+    /* from codepen.io */
+    .rate {
+        /* float: left; */
+        display: flex;
+        justify-content: center;
+        height: 46px;
+        padding: 0 10px;
+    }
+    .rate:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+    }
+    .rate:not(:checked) > label {
+        float:right;
+        width:1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:30px;
+        color:#ccc;
+    }
+    .rate:not(:checked) > label:before {
+        content: '★ ';
+    }
+    .rate > input:checked ~ label {
+        color: #ffc700;    
+    }
+    .rate:not(:checked) > label:hover,
+    .rate:not(:checked) > label:hover ~ label {
+        color: #deb217;  
+    }
+    .rate > input:checked + label:hover,
+    .rate > input:checked + label:hover ~ label,
+    .rate > input:checked ~ label:hover,
+    .rate > input:checked ~ label:hover ~ label,
+    .rate > label:hover ~ input:checked ~ label {
+        color: #c59b08;
+    }
+    
+

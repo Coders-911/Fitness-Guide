@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="alert/dist/sweetalert-dev.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Cart.css">
+    <title>Products</title>
+</head>
+<body>
+    <header>
+        <h1><span>Fitness</span>G<span>uide</span></h1>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/html/Sports.html">Sports</a></li>
+            <li><a href="/html/Products.html">Prodcuts</a></li>
+            <li><a href="/html/Cart.html">Cart</a></li>
+            <li><a href="/html/feedback.html">FeedBack</a></li>
+            <li><a href="/html/calcolateClaores.html">Calories</a></li>
+            <li><a href="/html/About-us.html">AboutUs</a></li>
+        </ul>
+       
+        
+        </header>
+        <section class="banner">
+           
+        </section>
+    <main>
+        <div>
+            <form id="create-product">
+                <input type="number" id="price-input" placeholder="price" />
+                <input type="url" id="image-url-input" placeholder="image url" />
+                <input type="submit" class="btn" />
+            </form>
+        </div>
+        <div id="cart-prodcut-container">
+        </div>
+        <section class="Calories">
+            <button id="checkout-button" class="btn">Checkout</button>
+            <!-- <button class ="btn">
+                <a href="/html/calcolateClaores.html">Calculate calories</a>
+            </button> -->
+        </section>
+        <div class="checkout">  
+            <p>total price: <span id="total-price">$0</span><span> $</span></p>
+        </div>
+
+    </main>
+    <footer>
+    </footer>
+    <script src="/js/common.js"></script>
+    <script src="/js/cart.js"></script>
+    
+</body>
+</html>
